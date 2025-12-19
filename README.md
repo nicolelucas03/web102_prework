@@ -18,7 +18,7 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 * [ ] The search index helps the user to easily search any game from the list.
-* Created a hover effect to containers.
+* [ ] Created a hover effect to containers.
 
 ## Video Walkthrough
 
