@@ -18,24 +18,21 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 * [ ] The search index helps the user to easily search any game from the list.
+* Created a hover effect to containers.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://youtu.be/yh4fVaOWn0E?si=1xE2gYnv2u48FRmE' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-[LiveCap]()
+Video created with YouTube
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
 [peek](https://github.com/phw/peek) for Linux. -->
 
-## Notes
-
-*Describe any challenges encountered while building the app.*
 
 ## License
 
