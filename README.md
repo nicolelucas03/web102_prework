@@ -24,7 +24,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src="https://youtu.be/yh4fVaOWn0E?si=1xE2gYnv2u48FRmE" title='Video Walkthrough' width='' alt='Video Walkthrough' />
+[Video Walkthrough](https://youtu.be/yh4fVaOWn0E?si=1xE2gYnv2u48FRmE)
 
 <!-- Replace this with whatever GIF tool you used! -->
 Video created with YouTube
