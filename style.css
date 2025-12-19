@@ -78,3 +78,26 @@ button {
     margin: 1%;
     border-radius: 7px;
 }
+
+#search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    width: 300px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #a8b0bc;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    outline: none;
+    transition: box-shadow 0.2s;
+}
+
+#search-bar:focus {
+    box-shadow: 0 0 10px #a8b0bc;
+    border-color: #758190;
+}

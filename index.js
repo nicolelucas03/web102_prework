@@ -1,3 +1,12 @@
+const searchBar = document.getElementById('search-bar');
+if (searchBar) {
+    searchBar.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+        const filteredGames = GAMES_JSON.filter(game => game.name.toLowerCase().includes(searchTerm));
+        deleteChildElements(gamesContainer);
+        addGamesToPage(filteredGames);
+    });
+}
 /*****************************************************************************
  * Challenge 2: Review the provided code. The provided code includes:
  * -> Statements that import data from games.js
@@ -141,13 +150,17 @@ allBtn.addEventListener("click", showAllGames);
 // grab the description container
 const descriptionContainer = document.getElementById("description-container");
 
-// use filter or reduce to count the number of unfunded games
 
+// use filter or reduce to count the number of unfunded games
+const numUnfunded = GAMES_JSON.filter(game => game.pledged < game.goal).length;
 
 // create a string that explains the number of unfunded games using the ternary operator
-
+const companyDescription = `A total of $${totalRaised.toLocaleString()} has been raised for ${GAMES_JSON.length} games. Currently, ${numUnfunded} game${numUnfunded === 1 ? '' : 's'} remain unfunded. We need your help to fund these amazing games!`;
 
 // create a new DOM element containing the template string and append it to the description container
+const descElem = document.createElement('p');
+descElem.textContent = companyDescription;
+descriptionContainer.appendChild(descElem);
 
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
@@ -161,8 +174,16 @@ const sortedGames =  GAMES_JSON.sort( (item1, item2) => {
     return item2.pledged - item1.pledged;
 });
 
+
 // use destructuring and the spread operator to grab the first and second games
+const [topGame, secondGame] = sortedGames;
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
+const topGameElem = document.createElement('p');
+topGameElem.textContent = topGame.name;
+firstGameContainer.appendChild(topGameElem);
 
 // do the same for the runner up item
+const secondGameElem = document.createElement('p');
+secondGameElem.textContent = secondGame.name;
+secondGameContainer.appendChild(secondGameElem);
